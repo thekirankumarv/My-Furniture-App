@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myfurnitureapp1.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.myfurnitureapp1.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.example.myfurnitureapp1.ui.category.CategoryFragment"
+        android:label="@string/category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/nav_new_products"
+        android:name="com.example.myfurnitureapp1.NewProductsFragment"
+        android:label="@string/new_products"
+        tools:layout="@layout/fragment_new_products" />
+    <fragment
+        android:id="@+id/nav_my_orders"
+        android:name="com.example.myfurnitureapp1.MyOrdersFragment"
+        android:label="@string/my_orders"
+        tools:layout="@layout/fragment_my_orders" />
+    <fragment
+        android:id="@+id/nav_my_carts"
+        android:name="com.example.myfurnitureapp1.MyCartsFragment"
+        android:label="@string/my_carts"
+        tools:layout="@layout/fragment_my_carts" />
+</navigation>
